@@ -1,0 +1,22 @@
+USE MASTER
+GO
+
+DROP DATABASE TESTE1
+GO
+
+CREATE DATABASE TESTE1
+GO
+
+USE teste1
+GO
+
+CREATE TABLE  tblProva
+(
+	id   INTEGER PRIMARY KEY IDENTITY,
+	txt1 VARCHAR(20),
+	txt2 VARCHAR(20)
+)
+GO
+
+INSERT tblProva (txt1,txt2) values ('valor txt1','valor txt2')
+SELECT * FROM tblProva
